@@ -3,7 +3,7 @@ import axios from "axios"
 import {Chart,BarElement,CategoryScale,LinearScale,Tooltip,Legend} from 'chart.js/auto';
 
 const getData=async()=>{
-    return await axios.get("http://localhost:8080")
+    return await axios.get("https://blackcoffer-assignment-server.onrender.com")
 }
 
 const Dashboard = () => {
@@ -113,6 +113,7 @@ const handleTopic=(e)=>{
    
   return (
     <div>
+      <h2>Filters</h2>
       <div style={{display:"flex",justifyContent:"space-evenly"}}>
         {/* Country filter */}
         <div>
